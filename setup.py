@@ -5,7 +5,7 @@ from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 
 CUDA_FLAGS = []
 
-cxx_args = ['-std=c++11']
+cxx_args = ['-std=c++14']
 
 nvcc_args = [
     '-gencode', 'arch=compute_30,code=sm_30',
