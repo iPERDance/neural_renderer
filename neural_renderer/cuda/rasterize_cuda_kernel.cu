@@ -35,7 +35,6 @@ return __longlong_as_double(old);
 }
 
 #endif
-dif
 
 namespace{
 template <typename scalar_t>
