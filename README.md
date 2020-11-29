@@ -10,12 +10,12 @@ Detailed documentation will be added in the near future.
 Python >= 3.6 and PyTorch >= 1.5
 
 ## Installation
-1. Install mode
+In install mode
     ```
     python3 setup.py install 
     ```
 
-2. Editing mode
+or editing mode
     ```
     pip install -v -e .
     ```
