@@ -7,20 +7,13 @@ Currently the API is the same as in the original implementation with some smalls
 The library is fully functional and it passes all the test cases supplied by the authors of the original library.
 Detailed documentation will be added in the near future.
 ## Requirements
-Python 2.7+ and PyTorch 0.4.0.
+Python >= 3.6 and PyTorch >= 1.5
 
-The code has been tested only with PyTorch 0.4.0, there are no guarantees that it is compatible with older versions.
-Currently the library has both Python 3 and Python 2 support.
-
-**Note**: In some newer PyTorch versions you might see some compilation errors involving AT_ASSERT. In these cases you can use the version of the code that is in the branch *at_assert_fix*. These changes will be merged into master in the near future.
 ## Installation
-For Python 2
-```
-sudo python setup.py install
-```
 For Python 3
 ```
-sudo python3 setup.py install
+sudo python3 setup.py install 
+pip install -v -e .
 ```
 
 ## Running examples
