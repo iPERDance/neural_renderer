@@ -10,11 +10,15 @@ Detailed documentation will be added in the near future.
 Python >= 3.6 and PyTorch >= 1.5
 
 ## Installation
-For Python 3
-```
-sudo python3 setup.py install 
-pip install -v -e .
-```
+1. Install mode
+    ```
+    python3 setup.py install 
+    ```
+
+2. Editing mode
+    ```
+    pip install -v -e .
+    ```
 
 ## Running examples
 ```
