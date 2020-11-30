@@ -3,21 +3,24 @@ import unittest
 
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 
-CUDA_FLAGS = []
 
 cxx_args = ['-std=c++14']
 
-nvcc_args = [
-    '-gencode', 'arch=compute_30,code=sm_30',
-    '-gencode', 'arch=compute_35,code=sm_35',
-    '-gencode', 'arch=compute_37,code=sm_37',
-    '-gencode', 'arch=compute_50,code=sm_50',
-    '-gencode', 'arch=compute_52,code=sm_52',
-    '-gencode', 'arch=compute_60,code=sm_60',
-    '-gencode', 'arch=compute_61,code=sm_61',
-    '-gencode', 'arch=compute_70,code=sm_70',
-    '-gencode', 'arch=compute_75,code=sm_75',
-]
+# compute architecture capability
+# nvcc_args = [
+#     '-gencode', 'arch=compute_30,code=sm_30',
+#     '-gencode', 'arch=compute_35,code=sm_35',
+#     '-gencode', 'arch=compute_37,code=sm_37',
+#     '-gencode', 'arch=compute_50,code=sm_50',
+#     '-gencode', 'arch=compute_52,code=sm_52',
+#     '-gencode', 'arch=compute_60,code=sm_60',
+#     '-gencode', 'arch=compute_61,code=sm_61',
+#     '-gencode', 'arch=compute_70,code=sm_70',
+#     '-gencode', 'arch=compute_75,code=sm_75',
+#     '-gencode', 'arch=compute_80,code=sm_80',
+# ]
+
+nvcc_args = []
 
 
 def test_all():
