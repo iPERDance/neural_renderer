@@ -44,7 +44,7 @@ ext_modules = [
     ], extra_compile_args={'cxx': cxx_args, 'nvcc': nvcc_args}),
 ]
 
-INSTALL_REQUIREMENTS = ['numpy', 'torch', 'torchvision', 'scikit-image', 'tqdm', 'imageio']
+INSTALL_REQUIREMENTS = ['numpy', 'torch', 'torchvision', 'scikit-image', 'tqdm', 'imageio', 'ninja']
 
 setup(
     description='PyTorch implementation of "A 3D mesh renderer for neural networks"',
