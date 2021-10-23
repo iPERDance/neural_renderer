@@ -44,14 +44,14 @@ ext_modules = [
     ], extra_compile_args={'cxx': cxx_args, 'nvcc': nvcc_args}),
 ]
 
-INSTALL_REQUIREMENTS = ['numpy', 'torch', 'torchvision', 'scikit-image', 'tqdm', 'imageio', 'ninja']
+INSTALL_REQUIREMENTS = ['numpy', 'torch', 'torchvision', 'scikit-image', 'tqdm', 'imageio', 'opencv-python']
 
 setup(
     description='PyTorch implementation of "A 3D mesh renderer for neural networks"',
     author='Nikolaos Kolotouros',
     author_email='nkolot@seas.upenn.edu',
     license='MIT License',
-    version='1.1.3',
+    version='1.2.0',
     name='neural_renderer',
     test_suite='setup.test_all',
     packages=['neural_renderer', 'neural_renderer.cuda'],
