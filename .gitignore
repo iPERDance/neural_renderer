@@ -115,3 +115,5 @@ tests/data/test_rasterize1.png
 tests/data/test_rasterize2.png
 examples/data/example1.gif
 examples/data/example2_optimization.gif
+
+.idea/

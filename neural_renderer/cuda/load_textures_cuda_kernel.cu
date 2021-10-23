@@ -77,12 +77,12 @@ at::Tensor load_textures_cuda(
     const int threads = 1024;
     const dim3 blocks ((textures_size / 3 - 1) / threads + 1);
 
-    AT_DISPATCH_FLOATING_TYPES(image.type(), "load_textures_cuda", ([&] {
+    AT_DISPATCH_FLOATING_TYPES(image.scalar_type(), "load_textures_cuda", ([&] {
       load_textures_cuda_kernel<scalar_t><<<blocks, threads>>>(
-          image.data<scalar_t>(),
-          faces.data<scalar_t>(),
-          is_update.data<int32_t>(),
-          textures.data<scalar_t>(),
+          image.data_ptr<scalar_t>(),
+          faces.data_ptr<scalar_t>(),
+          is_update.data_ptr<int32_t>(),
+          textures.data_ptr<scalar_t>(),
           textures_size,
           texture_size,
           image_height,
